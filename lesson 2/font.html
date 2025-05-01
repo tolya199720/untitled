@@ -1,0 +1,42 @@
+<!--два варіанти підключення шрифтів через лінк або імпорт (https://fonts.google.com/)-->
+<!--1) link :через лінк трішки швидше бо загружає. підключаємо link до хедера(зазвичай 3 силки типу-->
+<!--<link rel="preconnect" href="https://fonts.googleapis.com">-->
+<!--<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
+<!--<link href="https://fonts.googleapis.com/css2?family=Underdog&display=swap" rel="stylesheet">)-->
+<!-- далі прописуємо в css файлі клас прикла (.underdog-regular {-->
+<!--                                            font-family: "Underdog", system-ui;-->
+<!--                                            font-weight: 400;-->
+<!--                                            font-style: normal;-->
+<!--2) через import в css вставляємо @import url('https://fonts.googleapis.com/css2?family=Underdog&display=swap');-->
+<!--вставляємо в css файлі клас і все і все!) швидше але трішки довше
+ у 1 випадку лінки вставляється в хедер у другому випадку url вставляється в css-->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<style>
+    div{
+       display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+    }
+</style>
+<div>
+    <p style = "background-color: gold;  ">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+    <p style = "background-color: black ; ">Et laudantium, molestias nihil quisquam sed voluptatum?</p>
+    <p style = "background-color: red;   ">Aliquam exercitationem, sit! Corporis inventore labore nisi.</p>
+</div>
+<body>
+</body>
+</html>
