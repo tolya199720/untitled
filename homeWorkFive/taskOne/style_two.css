@@ -1,0 +1,34 @@
+div{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.preLoader{
+    width: 5rem;
+    height: 5rem;
+    background-color: red;
+    animation:preLoader_animation 5s linear infinite  alternate forwards;
+}
+.blue{
+    width: 100rem;
+    height: 100rem;
+    background-color: black;
+ }
+@keyframes preLoader_animation{
+    to{
+        scale(0.5);
+        rotate: 360deg;
+        border-radius: 50%;
+        opacity: 0.5;
+        background-color: blue;
+
+    }
+    from{
+        scale: 0;
+        width: 5rem;
+        height: 5rem;
+    }
+}
