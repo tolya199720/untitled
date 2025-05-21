@@ -1,0 +1,17 @@
+.wrapper_one ul>li:nth-child(2n+2) {
+    color: pink;
+}
+
+.wrapper_two ul>li:nth-child(1n+1) {
+    font-size: 22px;
+}
+.wrapper_three ul>li:nth-child(2n+4)::after {
+    content: "!";
+}
+.wrapper_four ul>li:last-child {
+background-color: purple;
+}
+.wrapper_five ul>li::first-letter {
+     font-size: 30px;
+    color: yellow;
+}
