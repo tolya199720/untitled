@@ -1,0 +1,48 @@
+@media screen  and (min-width: 768px)  and (max-width: 1439px)
+{
+    body{
+        width: 768px;
+        display: flex;
+        flex-direction:  row;
+        flex-wrap: wrap;
+        gap: 24px;
+        min-width: 768px;
+        margin: 0 auto;
+        padding: 48px 24px;
+    }
+
+    .wrap{
+        width:calc(48%);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+    img{
+        display: flex;
+        width: 160px;
+        height: 160px;
+        padding: 10px;
+        align-items: flex-start;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+    h3{
+        color: #161543;
+        font-family: Inter, sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%; /* 24px */
+        margin-bottom: 10px;
+    }
+    p{
+        width: 85%;
+        color: #7687A1;
+        font-family: Inter, sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%; /* 22.4px */
+    }
+}
