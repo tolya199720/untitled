@@ -1,0 +1,78 @@
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <style>
+            *{
+                margin: 0;
+            }
+            .wrapper {
+                height: 100vh;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: 1fr 1fr 0.5fr 0.5fr 1fr 1fr;
+                grid-template-areas:
+            "header header header header"
+            "main main main aside_first "
+            "section_both section_both section_both aside_first "
+            "section_both section_both section_both aside_second"
+            "section section section aside_second"
+             "footer footer footer footer";
+
+            }
+
+
+            header {
+                grid-area: header;
+                background: rgba(217, 217, 217, 1);
+            }
+
+            aside {
+
+                grid-area: aside_first;
+                background: rgba(147, 117, 117, 1);
+            }
+
+            main {
+                 grid-area: main;
+                background: rgba(164, 164, 164, 1);
+            }
+
+            section {
+                 grid-area: section;
+                background: rgba(100, 76, 76, 1);
+            }
+
+            .wrapper aside:nth-child(2) {
+                 grid-area: aside_second;
+                background: rgba(192, 189, 189, 1);
+            }
+
+            footer {
+                grid-area: footer;
+                background: rgba(217, 217, 217, 1);
+            }
+
+            .section_both {
+
+                 grid-area: section_both;
+                background: rgb(43, 41, 41);
+            }
+        </style>
+    </head>
+    <body>
+    <div class="wrapper">
+        <header></header>
+        <aside></aside>
+        <main></main>
+        <section></section>
+        <aside></aside>
+        <footer></footer>
+        <section class="section_both"></section>
+    </div>
+    </body>
+    </html>

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .wrapper {
+            display: grid;
+            grid-template-columns: 498px 528px 702px;
+            grid-template-rows: 50px 478px 478px 111px;
+            grid-template-areas:
+            "header header header"
+            "main aside section"
+            "main aside map"
+            "footer footer footer";
+
+        }
+        div>div:nth-child(1) {
+            grid-area: header;
+            background: rgba(217, 217, 217, 1);
+        }
+        div>div:nth-child(2) {
+            grid-area: main;
+            background: rgba(164, 164, 164, 1);
+        }
+        div>div:nth-child(3) {
+            grid-area: aside;
+            background: rgba(127, 122, 122, 1);
+        }
+        div>div:nth-child(4) {
+            grid-area: section;
+            background: rgba(97, 80, 80, 1);
+        }
+        div>div:nth-child(5) {
+            grid-area: map;
+            background: rgba(217, 217, 217, 1);
+        }
+        div>div:nth-child(6) {
+            grid-area: footer;
+            background: rgba(175, 169, 169, 1);
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="grid-container"></div>
+    <div class="grid-container"></div>
+    <div class="grid-container"></div>
+    <div class="grid-container"></div>
+    <div class="grid-container"></div>
+    <div class="grid-container"></div>
+</div>
+</body>
+</html>
